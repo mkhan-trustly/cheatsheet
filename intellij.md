@@ -1,14 +1,16 @@
 # Intellij
 
-## Shortcuts
+## General shortcuts
 
-| Shortcut  | Description               |
-|-----------|---------------------------|
-| ⇧ + ⌘ + A | Help - action             |
-| ⇧ + ⌥ + ↩ | All imports               |
-| ⌘ + L     | Goto line                 |
-| ⌘ + F12   | Show all methods          |
-| ⌥ + F7    | Find usage                |
+| Shortcut  | Description      |
+|-----------|------------------|
+| ⇧ + ⇧     | Search           |
+| ⌃ + ⌥ + O | Fix imports      |
+| ⌥ + ↩     | Fix import       |
+| ⇧ + ⌥ + ↩ | All imports      |
+| ⌘ + L     | Goto line        |
+| ⌘ + F12   | Show all methods |
+| ⌥ + F7    | Find usage       |
 
 
 ## Navigation shortcuts
@@ -25,3 +27,10 @@
 | ⌥ + UP/DOWN | Code selection |
 | ⌘ + ⌥ + M   | Extract method |
 | ⌘ + ⌥ + N   | Inline method  |
+
+## Run shortcuts
+
+| Shortcut  | Description    |
+|-----------|----------------|
+| ⌃ + ⇧ + R | Run the code   |
+| ⌃ + ⇧ + D | Debug the code |

@@ -22,6 +22,7 @@ pbpaste > backup.txt → Paste clipboard into a file
 find . -name "*.java" → Find all Java files
 grep "TODO" *.java → Search “TODO” inside Java files
 grep -r "AuthService" . → Recursive grep
+grep -r --include="*.java" "reactor.core" . | grep -vE 'reactor\.core\.publisher\.(Mono|Flux)'
 ```
 
 #### How many Java files have Service in their name?

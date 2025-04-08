@@ -34,3 +34,15 @@
 |-----------|----------------|
 | ⌃ + ⇧ + R | Run the code   |
 | ⌃ + ⇧ + D | Debug the code |
+
+## Add shortcuts
+
+| Shortcut      | Description     |
+|---------------|-----------------|
+| ⌘ + 1 → ⌘ + N | Add a new file  |
+
+## Generate shortcuts
+
+| Shortcut | Description                                             |
+|----------|---------------------------------------------------------|
+| ⌘ + N    | Generate (Constructor, Getter, toString, equals(), ...) |

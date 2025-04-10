@@ -23,6 +23,7 @@ find . -name "*.java" → Find all Java files
 grep "TODO" *.java → Search “TODO” inside Java files
 grep -r "AuthService" . → Recursive grep
 grep -r --include="*.java" "reactor.core" . | grep -vE 'reactor\.core\.publisher\.(Mono|Flux)'
+find . -type f -iname "*photo*"
 ```
 
 #### How many Java files have Service in their name?

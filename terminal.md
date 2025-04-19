@@ -47,3 +47,8 @@ alias gc='git commit -m'
 alias mvnci='mvn clean install'
 alias ..='cd ..'
 ```
+
+### xargs
+```
+lsof -ti :9999 | xargs kill
+```

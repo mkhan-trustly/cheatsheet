@@ -42,6 +42,10 @@ git merge develop --strategy-option ours --no-commit --no-ff
 ```
 git tag -a v1.0 -m "..."
 git push origin v1.0
+
+git log 5.9..5.10 -- path/to/folder
+git diff --name-only 5.9 5.10 -- path/to/folder
+git tag --contains <commit>
 ```
 
 ### Reset
@@ -56,5 +60,17 @@ git checkout origin/master server/pnpm-lock.yaml
 
 git rm -rf <directory>
 
+```
+
+### log
+```
+git log -- path/to/folder
+git log --author="Your Name" -- path/to/folder
+
+```
+
+### diff
+```
+git diff COMMIT1 COMMIT2 -- path/to/folder
 ```
 

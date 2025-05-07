@@ -52,3 +52,8 @@ alias ..='cd ..'
 ```
 lsof -ti :9999 | xargs kill
 ```
+
+### remove line breaks
+```
+tr -d '\n' < input.txt > output.txt
+```

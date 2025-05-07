@@ -77,3 +77,23 @@ Legacy system didn’t respond in time
 424
 Explicit dependency failure (optional, expressive)
 
+```
+@GetMapping("/call-legacy")
+public Mono<ResponseEntity<String>> callLegacy() {
+    return webClient.get()
+        .uri("http://legacy-service/api")
+        .retrieve()
+        .bodyToMono(String.class)
+        .timeout(Duration.ofSeconds(3))
+        .map(body -> ResponseEntity.ok(body))
+        .onErrorResume(TimeoutException.class, ex -> 
+            Mono.just(ResponseEntity.status(HttpStatus.GATEWAY_TIMEOUT)
+                .body("Legacy service timed out"))
+        )
+        .onErrorResume(ex -> 
+            Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Internal error"))
+        );
+}
+```
+

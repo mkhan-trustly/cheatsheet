@@ -22,11 +22,12 @@
 
 ## Refactor shortcuts
 
-| Shortcut    | Description    |
-|-------------|----------------|
-| ⌥ + UP/DOWN | Code selection |
-| ⌘ + ⌥ + M   | Extract method |
-| ⌘ + ⌥ + N   | Inline method  |
+| Shortcut    | Description                   |
+|-------------|-------------------------------|
+| ⌥ + UP/DOWN | Code selection                |
+| ⌘ + ⌥ + M   | Extract method                |
+| ⌘ + ⌥ + N   | Inline method                 |
+| ⌃ + G       | Mark line to use multi-cursor |
 
 ## Run shortcuts
 

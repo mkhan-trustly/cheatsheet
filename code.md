@@ -31,4 +31,5 @@ public final class NordicCurrency {
 }
 
 MonetaryAmount amount = Money.of(100, "SEK");
+MonetaryAmount amount = Money.of(100, "SEK");
 ```
